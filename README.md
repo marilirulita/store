@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# New Store
 
-# Project Name
-
-> Description the project.
+> First template new store.
 
 
 ## Built With
