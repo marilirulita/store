@@ -1,3 +1,4 @@
+// import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -6,14 +7,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">
-        <Navbar />
-        <Header />
-        <Main />
-        <Footer />
+    <>
+      <div className="App">
+        <div className="App-header">
+          <Navbar />
+          <Header />
+          <Main />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
