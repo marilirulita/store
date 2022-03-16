@@ -9,9 +9,8 @@ import search from '../assets/images/icons/search.svg';
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const navLinks = [
-    { id: 1, name: 'Home', to: '/' },
-    { id: 2, name: 'Login', to: '/LoginPage' },
-    { id: 3, name: 'Create an account', to: '/Signup' },
+    { id: 1, name: 'Login', to: '/LoginPage' },
+    { id: 2, name: 'Create an account', to: '/Signup' },
   ];
   const handleVisible = () => setVisible(!visible);
   return (
