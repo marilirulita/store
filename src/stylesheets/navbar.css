@@ -1,0 +1,151 @@
+.site-header {
+  background: linear-gradient(to bottom, #fff159 50%, white 50%);
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3px 10px 10px 10px;
+}
+
+.logo-details {
+  display: flex;
+  align-items: center;
+}
+
+.site-name {
+  width: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #034c91;
+}
+
+.burger-icon {
+  justify-self: end;
+}
+
+.burger-icon,
+.closeBtn {
+  width: 40px;
+}
+
+.company-logo {
+  width: 60px;
+}
+
+.form {
+  grid-column: 1 / span3;
+  width: 100%;
+  padding: 3px 4px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  width: 100%;
+  height: 25px;
+  text-indent: 5px;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.search-icon-btn {
+  background: white;
+  border: none;
+  border-left: 1px solid rgb(170, 170, 170);
+}
+
+.search-icon-btn,
+.search-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-contents,
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-contents {
+  align-items: flex-end;
+}
+
+.show-nav {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: 850ms;
+  background: linear-gradient(100deg, #4a8fc4, #034c91);
+  height: 100vh;
+  width: 100%;
+  grid-column: 1/span3;
+}
+
+.show-nav.active {
+  left: 0;
+}
+
+.show-nav.active::after {
+  left: -100%;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 44px;
+  justify-self: end;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header {
+    background: #fff159;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .show-nav {
+    position: static;
+    height: auto;
+    background: none;
+    order: 2;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .link {
+    color: rgb(150, 149, 149);
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 500;
+  }
+
+  .link:hover {
+    color: black;
+  }
+
+  #first-link {
+    margin-left: 4px;
+  }
+
+  .form {
+    grid-column: 2/3;
+    width: auto;
+  }
+}
