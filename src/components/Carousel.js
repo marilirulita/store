@@ -4,10 +4,11 @@ import '../stylesheets/carousel.css';
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
   const images = [
-    { id: 1, src: 'https://i.pinimg.com/originals/c2/8b/c9/c28bc99dafaeb107246f904f34bae16c.jpg' },
-    { id: 2, src: 'https://images.wallpaperscraft.com/image/single/space_galaxy_shine_137572_1280x720.jpg' },
-    { id: 3, src: 'https://cdn.wallpapersafari.com/74/30/v23HkS.jpg' },
-    { id: 4, src: 'https://wallpaperaccess.com/full/3971879.jpg' },
+    { id: 1, src: 'https://fromthehipphoto.com/wp-content/uploads/2020/03/0018-From-the-Hip-Photo-expedited-705x471.jpg' },
+    { id: 2, src: 'https://www.productphoto.com/wp-content/uploads/2019/01/6-Top-Alternatives-to-White-Background-Product-Photography.jpg' },
+    { id: 3, src: 'https://fixthephoto.com/images/content/product-photography-white-background-equipment.png' },
+    { id: 4, src: 'https://cdn.pixabay.com/photo/2019/07/13/13/42/watch-4334815_960_720.jpg' },
+    { id: 5, src: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&w=1000&q=80' },
   ];
   const nextSlide = () => setSlide((slide) => {
     let prev = slide;
